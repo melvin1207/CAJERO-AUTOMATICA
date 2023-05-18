@@ -14,6 +14,7 @@ ingresar.addEventListener('click', (e) => {
     usuario.saldo = usuario.saldo + Number(ingreso); 
     console.log(usuario.saldo)
     if(usuario.saldo <= 990 && usuario.saldo >= 10){
+        alert ("Has ingresado: "+ ingreso);
         localStorage.setItem("usuario", JSON.stringify(usuario));
         window.location.href = 'ingresar.html';
     }

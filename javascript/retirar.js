@@ -11,7 +11,7 @@ retirar.addEventListener('click', (e) => {
     retiro = document.querySelector('#retiro').value;
     usuario.saldo = usuario.saldo - retiro;
     if(usuario.saldo <= 990 && usuario.saldo >= 10){
-        console.log(retiro);
+        alert ("Usted ha retirado: "+ retiro)
         localStorage.setItem("usuario", JSON.stringify(usuario));
         window.location.href = 'retirar.html';
     }
