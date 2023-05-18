@@ -8,9 +8,9 @@ body{
     color: aliceblue;
 }
 
-main>div{
-    position: absolute;
-    top: 300px;
+#contain{
+    position: relative;
+    top: 100px;
 }
 
 p{
